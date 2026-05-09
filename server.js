@@ -37,7 +37,7 @@ const payload = {
   PartnerTag: process.env.AMAZON_ASSOCIATE_TAG,
   PartnerType: 'Associates',
   Marketplace: 'www.amazon.in',
-  SearchIndex: 'All'
+  SearchIndex: 'Electronics'
 };
 
 const body = JSON.stringify(payload);
