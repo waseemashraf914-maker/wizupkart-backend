@@ -102,7 +102,7 @@ console.error(
 
 res.status(500).json({
   success:false,
-  message:'Amazon API Error'
+  error: error.response?.data || error.message
 });
 
 }
