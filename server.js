@@ -1,5 +1,18 @@
 require('dotenv').config();
-const express=require('express');
-const app=express();
-app.get('/',(req,res)=>res.json({status:'running'}));
-app.listen(process.env.PORT||5000);
+
+const express = require('express');
+const axios = require('axios');
+const aws4 = require('aws4');
+const cors = require('cors');
+
+const app = express();
+
+app.use(cors({
+  origin: '*',
+  methods: ['GET','POST','OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
+
+app.options('*', cors());
+
+app.use(express.json());
