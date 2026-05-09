@@ -48,7 +48,7 @@ const opts = {
   host: 'webservices.amazon.in',
   path: '/paapi5/searchitems',
   service: 'ProductAdvertisingAPI',
-  region: 'us-east-1',
+  region: 'eu-west-1',
   method: 'POST',
   headers: {
     'Content-Type': 'application/json; charset=UTF-8',
