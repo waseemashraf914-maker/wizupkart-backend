@@ -32,10 +32,8 @@ const keyword = req.body.keyword || 'electronics';
 const payload = {
   Keywords: keyword,
   Resources: [
-    'Images.Primary.Medium',
-    'ItemInfo.Title',
-    'Offers.Listings.Price'
-  ],
+  'ItemInfo.Title'
+],
   PartnerTag: process.env.AMAZON_ASSOCIATE_TAG,
   PartnerType: 'Associates',
   Marketplace: 'www.amazon.in',
